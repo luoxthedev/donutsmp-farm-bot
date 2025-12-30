@@ -13,6 +13,7 @@ const antiAfk = require('./plugins/antiAfk');
 const randomMove = require('./plugins/randomMove');
 const chatLogger = require('./plugins/chatLogger');
 const autoReconnect = require('./plugins/autoReconnect');
+const autoLobby = require('./plugins/autoLobby');
 
 // Discord integration
 const startDiscordBot = require('./discord/bot');
@@ -86,7 +87,10 @@ function createBot(accountConfig) {
     if (cfg.plugins && cfg.plugins.antiAfk) antiAfk(bot);
     if (cfg.plugins && cfg.plugins.randomMove) randomMove(bot);
     if (cfg.plugins && cfg.plugins.chatLogger) chatLogger(bot);
-    if (cfg.plugins && cfg.plugins.autoSpawnCommand) {
+    if (cfg.plugins && cfg.plugins.autoLobby) {
+      // Wait a bit before starting the lobby logic to ensure we are fully loaded
+      setTimeout(() => autoLobby(bot), 2000);
+    } else if (cfg.plugins && cfg.plugins.autoSpawnCommand) {
       setTimeout(() => {
         bot.chat('/spawn');
         setTimeout(() => bot.chat('/lobby'), 3000);

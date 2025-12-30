@@ -15,6 +15,7 @@
     "chatLogger": true,
     "autoReconnect": true,
     "autoSpawnCommand": true,
+    "autoLobby": true,
     "autoRespawn": true
   },
   "web": {
