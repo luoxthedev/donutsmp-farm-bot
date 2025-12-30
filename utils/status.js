@@ -67,6 +67,7 @@ function getBotStatus(bot, config) {
   const e = bot.entity;
   const scoreboard = readScoreboard(bot, config?.discord?.scoreboardMaxLines || 10);
   return {
+    username: bot.username,
     online: true,
     alive: e.health > 0,
     health: Math.round(e.health),

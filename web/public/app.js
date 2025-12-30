@@ -75,10 +75,10 @@ inputEl.addEventListener('keydown', e => {
  */
 function updateSelectOptions() {
   botSelect.innerHTML = '';
-  for (const name of Object.keys(botsStatus)) {
+  for (const [id, status] of Object.entries(botsStatus)) {
     const option = document.createElement('option');
-    option.value = name;
-    option.textContent = name;
+    option.value = id;
+    option.textContent = status.username || id;
     botSelect.appendChild(option);
   }
   if (selectedBot && botsStatus[selectedBot]) {
@@ -101,8 +101,8 @@ function updateUI() {
     return;
   }
   const status = botsStatus[selectedBot];
-  usernameEl.textContent = selectedBot;
-  skinEl.src = `https://mc-heads.net/avatar/${selectedBot}/64`;
+  usernameEl.textContent = status.username || selectedBot;
+  skinEl.src = `https://mc-heads.net/avatar/${status.username || selectedBot}/64`;
   if (status.online) {
     statusIndicator.classList.remove('offline');
     statusIndicator.classList.add('online');
