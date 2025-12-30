@@ -17,7 +17,6 @@ This project lets you run multiple Minecraft bot accounts using the [mineflayer]
 - Automatic anti‑AFK, random movements, respawn and reconnection.
 - Discord bot with `/send-embed` command that posts a live status embed and updates it every few seconds.
 - Hot‑reload of `config/config.json` so you can adjust settings without restarting Node.
-- Multi‑language README (English and French).
 
 ## Installation
 

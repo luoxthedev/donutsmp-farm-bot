@@ -17,7 +17,6 @@ Ce projet permet de faire tourner plusieurs comptes Minecraft à l’aide de la 
 - Anti‑AFK, mouvements aléatoires, respawn et reconnexion automatiques.
 - Bot Discord avec commande `/send-embed` qui publie un embed en direct et le met à jour toutes les quelques secondes.
 - Rechargement à chaud de `config/config.json` pour ajuster les paramètres sans redémarrer Node.
-- README disponible en anglais et en français.
 
 ## Installation
 
