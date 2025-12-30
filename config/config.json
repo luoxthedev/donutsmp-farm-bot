@@ -1,0 +1,32 @@
+{
+  "accounts": [
+    {
+      "username": "EMAIL_MICROSOFT_1",
+      "auth": "microsoft"
+    },
+    {
+      "username": "EMAIL_MICROSOFT_2",
+      "auth": "microsoft"
+    }
+  ],
+  "plugins": {
+    "antiAfk": true,
+    "randomMove": true,
+    "chatLogger": true,
+    "autoReconnect": true,
+    "autoSpawnCommand": true,
+    "autoRespawn": true
+  },
+  "web": {
+    "enabled": true,
+    "port": 3000,
+    "allowWebChat": true
+  },
+  "discord": {
+    "enabled": false,
+    "token": "DISCORD_BOT_TOKEN",
+    "guildId": "GUILD_ID",
+    "updateInterval": 5000,
+    "scoreboardMaxLines": 10
+  }
+}

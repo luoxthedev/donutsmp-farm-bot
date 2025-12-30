@@ -1,0 +1,86 @@
+/* Simple dark theme for the dashboard */
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.header label {
+  font-weight: bold;
+}
+
+.header select {
+  background: #1e293b;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #1e293b;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.indicator.online {
+  background-color: #22c55e;
+}
+.indicator.offline {
+  background-color: #ef4444;
+}
+
+.chat-container {
+  margin-top: 20px;
+}
+
+.chat {
+  height: 300px;
+  overflow-y: auto;
+  background: #020617;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+#input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+#input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

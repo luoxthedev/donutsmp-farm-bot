@@ -1,0 +1,19 @@
+{
+  "name": "minecraft-multi-bot",
+  "version": "1.0.0",
+  "description": "A multi-account Mineflayer bot with web dashboard and Discord integration",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "mineflayer": "^4.15.0",
+    "mineflayer-pathfinder": "^2.4.5",
+    "chalk": "^4.1.2",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "discord.js": "^14.11.0",
+    "chokidar": "^3.5.3"
+  }
+}
